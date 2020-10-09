@@ -2,7 +2,11 @@
 
 import math
 
-def tempConversion():
+def tempConversion(degrees, unit="C"):
+    If unit ="C":
+    
+
+
 
 
 def factorPair():
