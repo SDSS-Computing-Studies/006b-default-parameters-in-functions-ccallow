@@ -15,8 +15,6 @@ def tempConversion(degrees, unit="C"):
         return c
 
 
-
-
 def factorPair(a,b):
     #inputs
     #a=number
@@ -25,14 +23,18 @@ def factorPair(a,b):
     a = int(a)
     b = int(b)
     c = a/b
-    factors = []
-    factors.append(b)
-    factors.append(c)
+    c=int(c)
+    factors = [b,c]
     factors.sort()
     return factors
 
-def cosineLaw():
-    pass
+def cosineLaw(a,b,c, oppositeSide= "True"):
+    #inputs 
+    #a,b are the sides 
+    #c=angle
+
+
+    
 
 def convertAngle():
     pass
