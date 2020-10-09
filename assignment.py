@@ -14,14 +14,22 @@ def tempConversion(degrees, unit="C"):
         c = round (c, 1)
         return c
 
-    
 
 
 
-
-def factorPair():
-    pass
-
+def factorPair(a,b):
+    #inputs
+    #a=number
+    #b=factor
+    #returns b and factor that equals to a
+    a = int(a)
+    b = int(b)
+    c = a/b
+    factors = []
+    factors.append(b)
+    factors.append(c)
+    factors.sort()
+    return factors
 
 def cosineLaw():
     pass
