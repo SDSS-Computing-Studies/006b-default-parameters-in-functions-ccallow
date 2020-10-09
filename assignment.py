@@ -28,19 +28,37 @@ def factorPair(a,b):
     factors.sort()
     return factors
 
-def cosineLaw(a,b,c, oppositeSide= "True"):
+def cosineLaw(a,b,ca, oppositeSide= "True"):
     #inputs 
     #a,b are the sides 
     #c=angle
 
+    if oppositeSide = "True":
+        x1 = (a**2 + b**2) - (2*a*b*math.cos(ca))
+        c=math.sqrt(x1)
+        return c
+
+    elif oppositeSide = "False":
+
+
 
     
 
-def convertAngle():
-    pass
+def convertAngle(deg):
+    deg = float(deg)
+    rad=(deg*math.pi)/180
+    return rad
 
 def solution():
-    pass
+    
 
-def quadratic():
-    pass
+def quadratic(a,b,c):
+    a = float(a)
+    b = float(b)
+    c = float(c)
+    d = math.sqrt((b**2)- (4*a*c))
+    x1 = (-b + d) / (2*a)
+    x2 = (-b - d) / (2*a)
+    solutions = [x1,x2]
+    solutions.sort()
+    return solutions
