@@ -2,7 +2,6 @@
 
 import assignment
 
-#Example Command
-#print( assignment.tempConversion(10, unit="F") )
-#xpects:
-#-12.2
+print(assignment.tempConversion( 0))
+
+print(assignment.tempConversion(72, "F"))
