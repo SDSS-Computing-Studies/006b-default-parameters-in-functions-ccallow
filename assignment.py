@@ -67,7 +67,7 @@ def convertAngle(deg):
     return rad
 
 def solution(solutions):
-    sort.solutions()
+    solutions.sort()
     x2 = solutions[1]
     return x2
     
@@ -84,4 +84,4 @@ def quadratic(a,b,c):
     return solutions
 
 
-print(solution([-8.9, 5.3])
+print(solution([-8.9, 5.3]))
