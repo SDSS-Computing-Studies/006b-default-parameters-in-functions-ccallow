@@ -83,5 +83,3 @@ def quadratic(a,b,c):
     solutions.sort()
     return solutions
 
-
-print(solution([-8.9, 5.3]))
