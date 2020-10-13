@@ -83,3 +83,4 @@ def quadratic(a,b,c):
     solutions.sort()
     return solutions
 
+print(cosineLaw(10,3,50,oppositeSide=False))
