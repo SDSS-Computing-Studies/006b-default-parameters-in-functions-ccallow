@@ -39,8 +39,7 @@ def cosineLaw(a,b,ca, oppositeSide= True):
     if oppositeSide == True:
         x1 = (a**2 + b**2) - (2*a*b*math.cos(ca))
         c=math.sqrt(x1)
-        t=solution(c)
-        return t
+        return c
 
     elif oppositeSide == False:
         if a>b:
