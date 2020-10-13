@@ -32,13 +32,30 @@ def cosineLaw(a,b,ca, oppositeSide= "True"):
     #inputs 
     #a,b are the sides 
     #c=angle
+    a=float(a)
+    b=float(b)
+    ca= convertAngle(ca)
 
-    if oppositeSide = "True":
+    if oppositeSide == "True":
         x1 = (a**2 + b**2) - (2*a*b*math.cos(ca))
         c=math.sqrt(x1)
         return c
 
-    elif oppositeSide = "False":
+    elif oppositeSide == "False":
+        if a>b:
+            a1 = 1
+            b1 = (2*b*math.cos(ca))
+            c1 = b**2 - a**2
+            q = quadratic(a1,b1,c1)
+            return q
+            
+        if b>a:
+            a1 = 1
+            b1 = (2*a*math.cos(ca))
+            c1 = a**2 - b**2
+            q = quadratic(a1,b1,c1)
+            return q
+
 
 
 
@@ -49,7 +66,10 @@ def convertAngle(deg):
     rad=(deg*math.pi)/180
     return rad
 
-def solution():
+def solution(solutions):
+    sort.solutions()
+    x2 = solutions[1]
+    return x2
     
 
 def quadratic(a,b,c):
@@ -62,3 +82,6 @@ def quadratic(a,b,c):
     solutions = [x1,x2]
     solutions.sort()
     return solutions
+
+
+print(solution([-8.9, 5.3])

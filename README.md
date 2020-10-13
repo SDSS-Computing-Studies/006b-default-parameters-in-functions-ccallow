@@ -92,8 +92,7 @@ The optional parameter is a boolean True or False called "oppositeSide".
 The default will be True.
 
 Calculate the missing side of the triangle using the Cosine Law.  You may need to do
-some algebra to isolate your variable.  You will also need to use the quadratic formula to find the length of the side if
-it's not side c.
+some algebra to isolate your variable.  You will also need to use the quadratic formula to find the length of the side if it's not side c.
 
 We will use the math module to access a method called math.cos
 math.cos will tell us the cosine of an angle if it is in radians,
