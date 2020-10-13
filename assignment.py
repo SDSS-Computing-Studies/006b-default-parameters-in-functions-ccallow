@@ -28,7 +28,7 @@ def factorPair(a,b):
     factors.sort()
     return factors
 
-def cosineLaw(a,b,ca, oppositeSide= "True"):
+def cosineLaw(a,b,ca, oppositeSide= True):
     #inputs 
     #a,b are the sides 
     #c=angle
@@ -36,12 +36,12 @@ def cosineLaw(a,b,ca, oppositeSide= "True"):
     b=float(b)
     ca= convertAngle(ca)
 
-    if oppositeSide == "True":
+    if oppositeSide == True:
         x1 = (a**2 + b**2) - (2*a*b*math.cos(ca))
         c=math.sqrt(x1)
         return c
 
-    elif oppositeSide == "False":
+    elif oppositeSide == False:
         if a>b:
             a1 = 1
             b1 = (2*b*math.cos(ca))
