@@ -39,22 +39,25 @@ def cosineLaw(a,b,ca, oppositeSide= True):
     if oppositeSide == True:
         x1 = (a**2 + b**2) - (2*a*b*math.cos(ca))
         c=math.sqrt(x1)
-        return c
+        t=solution(c)
+        return t
 
     elif oppositeSide == False:
         if a>b:
             a1 = 1
-            b1 = (2*b*math.cos(ca))
+            b1 = (-2*b*math.cos(ca))
             c1 = b**2 - a**2
             q = quadratic(a1,b1,c1)
-            return q
+            t = solution(q)
+            return t
             
         if b>a:
             a1 = 1
-            b1 = (2*a*math.cos(ca))
+            b1 = (-2*a*math.cos(ca))
             c1 = a**2 - b**2
             q = quadratic(a1,b1,c1)
-            return q
+            t=solution(q)
+            return t
 
 
 
